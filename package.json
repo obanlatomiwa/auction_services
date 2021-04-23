@@ -1,5 +1,5 @@
 {
-  "name": "my_auction_app",
+  "name": "auction-app",
   "version": "1.0.0",
   "description": "An auction service implemented using the Serverless Framework",
   "author": "Obanla Tomiwa <www.tomiwaobanla.codes>",
@@ -15,6 +15,7 @@
     "webpack": "^4.35.2"
   },
   "dependencies": {
-    "aws-sdk": "^2.639.0"
+    "aws-sdk": "^2.639.0",
+    "uuid": "^8.3.2"
   }
 }
