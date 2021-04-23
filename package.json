@@ -1,8 +1,8 @@
 {
   "name": "my_auction_app",
   "version": "1.0.0",
-  "description": "Codingly template for Serverless Framework projects",
-  "author": "Obanla Tomiwa <www.tomiwacodes",
+  "description": "An auction service implemented using the Serverless Framework",
+  "author": "Obanla Tomiwa <www.tomiwaobanla.codes>",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.25.0",
