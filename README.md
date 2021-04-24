@@ -5,3 +5,4 @@
 - CloudWatch
 - IAM
 - S3
+- Middy
