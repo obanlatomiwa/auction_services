@@ -1,8 +1,9 @@
 # My_Auction_App
 
-- CloudFormation
-- DynamoDB
-- CloudWatch
-- IAM
-- S3
+- AWS CloudFormation
+- AWS DynamoDB
+- AWS CloudWatch
+- AWS IAM
+- AWS S3
+- AWS SQS
 - Middy

@@ -10,6 +10,7 @@ const DynamoDB = new AWS.DynamoDB.DocumentClient();
 
 async function createAuction(event, context) {
   const { title } = event.body;
+  const { email } = event.requestContext.authorizer;
   const date = new Date();
   const endDate = new Date();
   endDate.setHours(date.getHours() + 1);
@@ -23,6 +24,7 @@ async function createAuction(event, context) {
     highestBid: {
       amount: 0,
     },
+    seller: email,
   };
 
   //  send the result to AWS DynamoDB
@@ -42,4 +44,6 @@ async function createAuction(event, context) {
   };
 }
 
-export const handler = commonMiddleware(createAuction).use(validator({inputSchema: createAuctionSchema}));
+export const handler = commonMiddleware(createAuction).use(
+  validator({ inputSchema: createAuctionSchema })
+);
