@@ -1,6 +1,6 @@
 # My_Auction_App
 
-This app is built with the Microservices approach. Ma
+This app is built with the Microservices Architecture approach.
 
 ## Tools
 
