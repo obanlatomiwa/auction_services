@@ -39,6 +39,7 @@ export async function uploadAuctionPictureToS3(event) {
   };
 }
 
-export const handler = middy(uploadAuctionPictureToS3).use(
-  httpErrorHandler().use(cors())
-);
+export const handler = middy(uploadAuctionPictureToS3)
+  .use(httpErrorHandler())
+  .use(validator({ inputSchema: uploadPictureSchema }))
+  .use(cors());
